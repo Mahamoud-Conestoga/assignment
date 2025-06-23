@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Panama, Panama City, Central America, Vacation">
+    <meta name="description" content="A dive into Panama City: A beautiful vacation spot">
+    <title>Welcome to Panama City!</title>
 </head>
 <body>
     <header>
@@ -13,40 +15,86 @@
     <main>
         <!---Blockquote-->
         <section id="overview">
-            <h2> </h2>
-
+            <h2>About Panama City</h2>
+            <blockquote cite="https://en.wikipedia.org/wiki/Panama_City">
+                <em>Panama City</em>,[4] also known as Panama,[a] is the <strong>capital and largest city</strong> of Panama.[5][6] It has a total population of 1,086,990,[1][7] with over 2,100,000 in its metropolitan area. The city is located at the Pacific entrance of the Panama Canal, in the province of Panama. The city is the political and administrative center of the country, as well as a hub for banking and commerce.[8]
+            </blockquote>
         </section>
           <!---Images-->
         <section id="images">
-            <h2> </h2>
-
+            <h2>A look at the world famous Panama Canal</h2>
+            <figure>
+                <img src="images/panama-canal.jpg" height="200px" width="300px" alt="photo of the panama canal in panama city">
+                <figcaption>The Panama Canal connects the Atlantic Ocean to the Pacific Ocean</figcaption>
+            </figure>
         </section>
          <!---Quote-->
         <section id="quote">
-            <h2> </h2>
-
+            <h2>Famous Quote</h2>
+            <q cite="https://www.dukechronicle.com/article/2025/01/man-plan-canal-america#:~:text=The%20line%20%E2%80%9CA%20Man%2C%20A,simple%20wordplay%20with%20complex%20history.">A Man, A Plan, A Canal, Panama!</q><cite> --Leigh Mercer</cite>
         </section>
         <!--Video-->
         <section id="video">
-            <h2> </h2>
-            
+            <h2>Watch: Flying over Panama City</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1ib8pHSPdig?si=_aiFU8QJpOV9cxMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
         </section>
-       
     </main>
     <aside>
         <!--Links-->
-        <section>
-
+        <section id="links">
+            <h2>Planning a stay at Panama City?</h2>
+            <ul>
+                <li><a href="https://www.aa.com/i18n/travelInformation/destinationInformation/ecp-airport.jsp" target="_blank" title="Airport">Panama City Airport</a></li>
+                <li><a href="https://www.booking.com/city/us/panama-city.html" target="_blank" title="Hotels">Panama City Hotels</a></li>
+                <li><a href="https://www.visitpanamacitybeach.com/things-to-do/beaches/" target="_blank" title="Beaches">Panama City Beaches</a></li>
+            </ul>
         </section>
-          <!--Table-->
-          <section>
-            
-          </section>
+
+        <!--Table-->
+        <section id="table">
+            <h2>3 Facts about Panama City</h2>
+            <table>
+                <tr>
+                    <th>Continent</th>
+                    <th>Language</th>
+                    <th>Time Zone</th>
+                </tr>
+                <tr>
+                    <td>Central America</td>
+                    <td>Spanish</td>
+                    <td>EST</td>
+                </tr>
+            </table>
+        </section>
      
          <!--Form-->
-        <section>
-            
+        <section id="form">
+            <h2>Form</h2>
+            <form>
+                <label for="Name" class="form-label">Name:</label>
+                <input type="text" name="Name" id="Name" class="form-control" required autofocus><br><br>
+
+                <label for="Questions" class="form-label">Any questions about Panama city that you have?:</label>
+                <textarea name="Questions" id="Questions" class="form-control" placeholder="What is the population of Panama City?"></textarea><br><br>
+
+
+                <label for="Visit" class="form-label">Would you visit Panama City?:</label>
+                <select name="Visit" id="Visit" class="form-control">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Maybe">Maybe</option>
+                </select><br><br>
+
+
+                <label for="Email" class="form-label">Email:</label>
+                <input type="Email" name="Email" id="Email" class="form-control"><br><br>
+
+                <input type="submit" name="submit" id="submit" class="form-control">
+
+            </form>
+
         </section>
+
     </aside>
     <footer>
         <p>&copy; Mahamoud Mohamed 2025</p>
