@@ -1,0 +1,36 @@
+/*Mahamoud Mohamed 7410178*/
+html{
+    font : italic small-caps 500 20px/1.5 Calibri, serif;
+    background-color: grey;
+}
+header{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    background-image: linear-gradient(purple, white);
+}
+body{
+    max-width: 2000px;
+    margin: auto;
+    padding: 10rem;
+    border-style: solid;
+    border-width: .5rem;
+    border-color: black;
+    background-color: violet;
+}
+main{
+    width: 60%;
+    float: left;
+    padding : .25rem;
+}
+aside{
+    width : 30%;
+    float: right;
+    padding: .25rem;
+}
+footer{
+    clear: both;
+    font-size: 15px;
+    text-align: center;
+    background-image: linear-gradient(purple, white);
+}
