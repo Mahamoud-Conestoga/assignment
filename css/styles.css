@@ -1,27 +1,26 @@
 /*Mahamoud Mohamed 7410178*/
-html{
-    font : italic small-caps 500 20px/1.5 Calibri, serif;
+html{ 
+    font : italic small-caps 500 20px/1.5 Arial, serif;
     background-color: grey;
 }
 header{
     font-size: 40px;
     color: red;
     text-align: center;
-    background-image: linear-gradient(purple, white);
 }
-body{
+body{ 
     max-width: 2000px;
     margin: auto;
     padding: 10rem;
     border-style: solid;
     border-width: .5rem;
     border-color: black;
-    background-color: violet;
+    background-color: white;
 }
 main{
     width: 60%;
     float: left;
-    padding : .25rem;
+    padding: .25rem;
 }
 aside{
     width : 30%;
@@ -32,5 +31,122 @@ footer{
     clear: both;
     font-size: 15px;
     text-align: center;
+}
+header, footer{ /*type/group selector*/
     background-image: linear-gradient(purple, white);
+}
+h2{ /*type/element selector*/
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+}
+blockquote{
+    font-style: italic;
+    background-color: lightblue;
+    padding: 2rem;
+    border-left: 0.5rem solid black;
+    width: 80%;
+    margin: auto;
+    box-shadow: .5rem .5rem grey;
+}
+figure{
+    border: .5rem solid red;
+    border-radius: .5rem;
+    background-color: purple;
+    padding: 1rem;
+}
+figure > img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    border: .25rem solid red;
+    border-radius: .5rem;
+}
+figcaption{
+    font-size: 0.9rem;
+    font-variant: small-caps;
+}
+iframe{
+    border: 1rem solid black;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+#quote{ /*type/ID selector*/
+    border: 0.5rem solid black;
+    width: 85%;
+    font-style: italic;
+    box-shadow: .5rem .5rem .5rem grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+a:link{ /*type/pseudo-class selector*/
+    color: aqua;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    text-decoration: underline;
+    color: chartreuse;
+}
+a:active{
+    color: crimson;
+}
+ul{
+    list-style: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+th{
+    text-align: left;
+    font-weight: 800;
+    font-variant: normal;
+    color: green;
+    background-color: black;
+}
+td{
+    padding: 0.5rem;
+    border: 0.5rem solid black;
+}
+tr:nth-child(even){
+    background-color: rgb(198, 185, 185);
+}
+tr:hover{
+    background-color: aqua;
+}
+.form-label{ /*type/class selector*/
+    font-variant: normal;
+    font-weight: 800;
+    color: green;
+}
+.form-control{
+    padding: 0.5rem;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    width: 30rem;
+}
+@media (max-width : 750px) {
+    html{
+        font-size: 15px;
+    }
+    main, aside{
+        float : none;
+        width : 100%;
+        padding: 1rem;
+        text-align: center;
+    }
 }
